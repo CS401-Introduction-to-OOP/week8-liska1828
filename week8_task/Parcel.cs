@@ -11,13 +11,8 @@ public class Parcel : DeliveryItem
         
     }
 
-    public override double CalculateCost(double cost)
+    public override double CalculateCost()
     {
-        if (cost < 0)
-        {
-            throw new ArgumentException("cost cannot be negative");
-        }
-
         return 50 + (Weight * 25);
 
     }

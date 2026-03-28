@@ -4,6 +4,7 @@ public abstract class DeliveryItem
 {
     public string TrackingNumber { get; private set; }
     public double Weight { get; private set; }
+    
 
     public DeliveryItem(string trackingNumber, double weight)
     {
@@ -12,7 +13,7 @@ public abstract class DeliveryItem
 
     }
 
-    public abstract double CalculateCost(double cost);
+    public abstract double CalculateCost();
 
     public virtual void PrintInfo()
     {

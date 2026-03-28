@@ -3,6 +3,7 @@ namespace week8_task;
 public class CargoContainer <T> where T : DeliveryItem
 {
     private List<T> items = new List<T>();
+    
 
     public void AddItem(T item)
     {

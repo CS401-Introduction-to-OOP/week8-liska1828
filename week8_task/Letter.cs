@@ -9,13 +9,8 @@ public class Letter : DeliveryItem
         
     }
 
-    public override double CalculateCost(double cost)
+    public override double CalculateCost()
     {
-        if (cost < 0)
-        {
-            throw new ArgumentException("cost cannot be negative");
-        }
-
         return 15 + (Weight * 10);
         
     }
